@@ -18,6 +18,7 @@
 package com.huaweicloud.config.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
+
 import java.util.HashMap;
 import java.util.Map;
 

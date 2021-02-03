@@ -74,6 +74,15 @@
     <tag>HEAD</tag>
   </scm>
 
+  <dependencies>
+    <!--引入gpg防止下面的plugins爆红-->
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-gpg-plugin</artifactId>
+      <version>1.5</version>
+    </dependency>
+  </dependencies>
+
   <profiles>
     <profile>
       <id>release</id>

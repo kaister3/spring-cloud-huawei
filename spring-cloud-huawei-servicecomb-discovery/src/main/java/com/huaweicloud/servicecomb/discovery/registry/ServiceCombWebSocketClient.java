@@ -20,10 +20,12 @@ package com.huaweicloud.servicecomb.discovery.registry;
 import com.huaweicloud.servicecomb.discovery.event.ServerCloseEvent;
 import com.huaweicloud.servicecomb.discovery.event.ServerListRefreshEvent;
 import com.huaweicloud.servicecomb.discovery.event.ServiceCombEvent;
+
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Map;
 import java.util.function.Consumer;
+
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.drafts.Draft_6455;
 import org.java_websocket.handshake.ServerHandshake;

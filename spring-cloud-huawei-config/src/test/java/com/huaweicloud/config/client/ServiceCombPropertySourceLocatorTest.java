@@ -20,12 +20,15 @@ package com.huaweicloud.config.client;
 
 import com.huaweicloud.config.ServiceCombConfigProperties;
 import com.huaweicloud.config.ServiceCombPropertySourceLocator;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import com.huaweicloud.config.ServiceCombConfigProperties.Watch;
 import com.huaweicloud.config.client.ConfigConstants;
 import com.huaweicloud.config.client.ServiceCombConfigClient;
+
 import org.springframework.core.env.Environment;
 import org.springframework.core.env.PropertySource;
 

@@ -23,7 +23,7 @@ import org.apache.servicecomb.foundation.common.utils.BeanUtils;
  * @Date 2019/10/28
  **/
 public class AppMain {
-    public static void main(String[] args) {
-        BeanUtils.init();
-    }
+  public static void main(String[] args) {
+    BeanUtils.init();
+  }
 }

@@ -20,6 +20,7 @@ package com.huaweicloud.common.util;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 import org.apache.commons.configuration.EnvironmentConfiguration;
 import org.apache.commons.configuration.SystemConfiguration;
 import org.springframework.util.StringUtils;

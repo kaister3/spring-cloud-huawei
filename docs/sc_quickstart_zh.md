@@ -1,12 +1,12 @@
-#快速开始
+# 快速开始
+
 spring-cloud-huawei可以使用spring cloud的方式注册发现，只需要修改部分配置文件即可。
 
 ## step 1 引用jar依赖
 
 因为spring-cloud-huawei还没有发布到公共仓库，如果要使用，需要先下载代码在本地构建。
 
-mvn clean install --settings .maven.settings.xml 
-以下以maven为例。 项目中可以使用dependencyManagement引入依赖。
+mvn clean install --settings .maven.settings.xml 以下以maven为例。 项目中可以使用dependencyManagement引入依赖。
 
 	<dependencyManagement>
 	  <dependencies>
@@ -76,16 +76,15 @@ mvn clean install --settings .maven.settings.xml
 通过配置文件application.yml)定义配置
 
 spring:
-  application:
-    name: price
-  cloud:
-    servicecomb:
-      config:
-        serverAddr: https://cse.cn-east-3.myhuaweicloud.com 
-        watch:
-          delay: 10000
-## step 3 启动类添加注解
+application:
+name: price cloud:
+servicecomb:
+config:
+serverAddr: https://cse.cn-east-3.myhuaweicloud.com
+watch:
+delay: 10000
 
+## step 3 启动类添加注解
 
 	@SpringBootApplication
 	@EnableDiscoveryClient

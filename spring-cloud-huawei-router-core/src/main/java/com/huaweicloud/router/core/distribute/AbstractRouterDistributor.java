@@ -17,8 +17,10 @@
 package com.huaweicloud.router.core.distribute;
 
 import com.netflix.loadbalancer.Server;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import com.huaweicloud.router.core.cache.RouterRuleCache;
 import com.huaweicloud.router.core.model.PolicyRuleItem;
 import com.huaweicloud.router.core.model.RouteItem;
@@ -30,7 +32,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+
 import com.huaweicloud.common.util.VersionCompareUtil;
+
 import org.springframework.util.CollectionUtils;
 
 /**

@@ -18,6 +18,7 @@ package com.huaweicloud.router.core.model;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import com.huaweicloud.common.exception.RouterIllegalParamException;
 
 /**
@@ -30,8 +31,10 @@ public class HeaderRule {
 
   //正则
   private String regex;
+
   //是否区分大小写 false区分 true不区分
   private Boolean caseInsensitive = false;
+
   //精准匹配
   private String exact;
 

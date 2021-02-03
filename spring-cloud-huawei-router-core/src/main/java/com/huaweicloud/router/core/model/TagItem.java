@@ -27,6 +27,7 @@ import java.util.Objects;
 public class TagItem {
 
   private String version;
+
   private Map<String, String> param;
 
   public TagItem() {
@@ -102,7 +103,7 @@ public class TagItem {
     if (this.param == null || item.getParam() == null) {
       return false;
     }
-    if(this.version!=null && item.getVersion()!=null){
+    if (this.version != null && item.getVersion() != null) {
       return this.version.equals(item.getVersion()) && this.param.equals(item.getParam());
     }
     return this.param.equals(item.getParam());
@@ -117,7 +118,7 @@ public class TagItem {
    */
   public int matchNum(TagItem item) {
     int cnt = 0;
-    if(version != null && !version.equals(item.version)){
+    if (version != null && !version.equals(item.version)) {
       return 0;
     }
     cnt++;

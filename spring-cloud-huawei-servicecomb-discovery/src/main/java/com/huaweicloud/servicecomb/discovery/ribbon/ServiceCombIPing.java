@@ -19,6 +19,7 @@ package com.huaweicloud.servicecomb.discovery.ribbon;
 
 import com.netflix.loadbalancer.IPing;
 import com.netflix.loadbalancer.Server;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;

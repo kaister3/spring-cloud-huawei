@@ -20,14 +20,18 @@ package com.huaweicloud.router.core;
 import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.config.DynamicStringProperty;
 import com.netflix.loadbalancer.Server;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.junit.Assert;
 import org.junit.Test;
+
 import com.huaweicloud.router.core.cache.RouterRuleCache;
 import com.huaweicloud.router.core.distribute.AbstractRouterDistributor;
+
 import mockit.Expectations;
 
 /**
@@ -64,6 +68,7 @@ public class RouterDistributorTest {
       + "            tags:\n"
       + "              version: 1\n"
       + "              app: a";
+
   String targetServiceName = "test_server";
 
   @Test
@@ -133,7 +138,9 @@ public class RouterDistributorTest {
   class ServiceIns extends Server {
 
     String version = "1.1";
+
     String serverName = targetServiceName;
+
     Map<String, String> tags = new HashMap();
 
     public ServiceIns(String id) {

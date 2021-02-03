@@ -19,10 +19,13 @@ package com.huaweicloud.router.core;
 
 import java.util.Arrays;
 import java.util.List;
+
 import org.junit.Test;
+
 import com.huaweicloud.router.core.model.Matcher;
 import com.huaweicloud.router.core.model.PolicyRuleItem;
 import com.huaweicloud.router.core.model.RouteItem;
+
 import org.yaml.snakeyaml.Yaml;
 
 /**
@@ -81,7 +84,7 @@ public class SerializeTest {
   @Test
   public void checkRouteItemList() {
     Yaml yaml = new Yaml();
-    List<RouteItem> list = Arrays.asList(yaml.loadAs(rootItemStr,RouteItem[].class));
+    List<RouteItem> list = Arrays.asList(yaml.loadAs(rootItemStr, RouteItem[].class));
     for (RouteItem item : list) {
       System.out.println("--------------");
       System.out.println(item);
@@ -92,12 +95,11 @@ public class SerializeTest {
   @Test
   public void checkAllParam() {
     Yaml yaml = new Yaml();
-    List<PolicyRuleItem> list = Arrays.asList(yaml.loadAs(allRuleList,PolicyRuleItem[].class));
+    List<PolicyRuleItem> list = Arrays.asList(yaml.loadAs(allRuleList, PolicyRuleItem[].class));
     for (PolicyRuleItem item : list) {
       System.out.println("--------------");
       System.out.println(item);
       System.out.println("--------------");
     }
   }
-
 }

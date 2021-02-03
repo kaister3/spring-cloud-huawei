@@ -1,4 +1,3 @@
-
 ## Configuration(application.yaml) instructions
 
 | Configuration                 | Key                                                    | Default Value                                                |

@@ -42,7 +42,7 @@ public class GovernanceController {
 
     int retry = retryTimes.get(invocationID);
 
-    if (retry  == 3) {
+    if (retry == 3) {
       return "try times: " + retry;
     }
     response.setStatus(502);

@@ -18,6 +18,7 @@
 package com.huaweicloud.sample;
 
 import com.netflix.config.DynamicPropertyFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -30,7 +31,8 @@ import org.springframework.web.client.RestTemplate;
  **/
 @RestController
 public class ConsumerController {
-  static  Integer d =0;
+  static Integer d = 0;
+
   @Autowired
   private RestTemplate restTemplate;
 
@@ -42,9 +44,10 @@ public class ConsumerController {
 
   @RequestMapping("/testconfig")
   public String getConfig() {
-    String dstr = DynamicPropertyFactory.getInstance().getStringProperty("servicecomb.routeRule.canary-provider",null,()->{
-      ConsumerController.d++;
-    }).get();
-    return dstr+"   "+d;
+    String dstr = DynamicPropertyFactory.getInstance()
+        .getStringProperty("servicecomb.routeRule.canary-provider", null, () -> {
+          ConsumerController.d++;
+        }).get();
+    return dstr + "   " + d;
   }
 }

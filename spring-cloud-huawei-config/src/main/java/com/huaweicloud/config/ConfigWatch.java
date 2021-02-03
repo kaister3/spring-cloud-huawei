@@ -30,9 +30,12 @@ import org.slf4j.LoggerFactory;
 import com.huaweicloud.common.event.ConfigRefreshEvent;
 import com.huaweicloud.common.exception.RemoteOperationException;
 import com.huaweicloud.common.util.MD5Util;
+
 import org.springframework.cloud.context.refresh.ContextRefresher;
+
 import com.huaweicloud.config.client.RefreshRecord;
 import com.huaweicloud.config.client.ServiceCombConfigClient;
+
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.context.SmartLifecycle;

@@ -19,6 +19,7 @@ package com.huaweicloud.common.transport;
 
 import java.util.HashMap;
 import java.util.Map;
+
 import org.apache.http.Header;
 
 /**

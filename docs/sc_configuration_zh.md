@@ -1,4 +1,3 @@
-
 ## 配置说明(application.yaml)
 
 | 配置                                                         | Key                                                    | 默认值                                   |

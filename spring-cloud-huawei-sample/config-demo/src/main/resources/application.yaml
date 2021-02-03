@@ -24,7 +24,7 @@ spring:
     servicecomb:
       discovery:
         enabled: true
-        address:  http://127.0.0.1:30100
+        address: http://127.0.0.1:30100
         serviceName: price
         version: 0.0.1
         healthCheckInterval: 30

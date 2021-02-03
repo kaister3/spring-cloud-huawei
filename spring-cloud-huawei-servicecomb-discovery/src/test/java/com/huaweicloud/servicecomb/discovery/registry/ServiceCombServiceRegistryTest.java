@@ -20,6 +20,7 @@ package com.huaweicloud.servicecomb.discovery.registry;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import com.huaweicloud.common.exception.ServiceCombException;
 import com.huaweicloud.servicecomb.discovery.client.ServiceCombClient;
 import com.huaweicloud.servicecomb.discovery.client.model.Microservice;

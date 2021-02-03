@@ -18,8 +18,10 @@
 package com.huaweicloud.common.transport;
 
 import java.util.Map;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.HttpUriRequest;
+
 import com.huaweicloud.common.exception.RemoteServerUnavailableException;
 
 /**

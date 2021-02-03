@@ -20,11 +20,13 @@ package com.huaweicloud.servicecomb.discovery.ribbon;
 import com.huaweicloud.servicecomb.discovery.event.ServerListRefreshEvent;
 import com.huaweicloud.servicecomb.discovery.event.ServiceCombEventBus;
 import com.netflix.loadbalancer.PollingServerListUpdater;
+
 import java.util.Date;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicLong;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -116,5 +118,4 @@ public class ServiceCombServerListUpdater extends PollingServerListUpdater {
   public int getCoreThreads() {
     return super.getCoreThreads();
   }
-
 }

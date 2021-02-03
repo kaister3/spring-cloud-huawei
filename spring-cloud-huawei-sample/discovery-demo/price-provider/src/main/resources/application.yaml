@@ -24,7 +24,7 @@ spring:
     servicecomb:
       discovery:
         enabled: true
-#        multiple registries
+        #        multiple registries
         address: http://127.0.0.2:30100,http://127.0.0.1:30100
         serviceName: price
         version: 0.0.1

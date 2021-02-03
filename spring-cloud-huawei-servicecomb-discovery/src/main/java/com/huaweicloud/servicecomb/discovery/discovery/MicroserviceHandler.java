@@ -25,7 +25,9 @@ import java.util.List;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
 import org.springframework.cloud.client.ServiceInstance;
+
 import com.huaweicloud.servicecomb.discovery.client.ServiceCombClient;
 import com.huaweicloud.servicecomb.discovery.client.model.Framework;
 import com.huaweicloud.servicecomb.discovery.client.model.Microservice;
@@ -44,12 +46,12 @@ public class MicroserviceHandler {
 
   public static List<ServiceInstance> getInstances(Microservice microservice,
       ServiceCombClient serviceCombClient) {
-      String revision = "0";
-      if (serviceRevision.containsKey(microservice.getServiceName())) {
-        revision = serviceRevision.get(microservice.getServiceName());
-      }
-      List<ServiceInstance> instanceList = serviceCombClient.getInstances(microservice, revision);
-      return getList(instanceList, microservice.getServiceName());
+    String revision = "0";
+    if (serviceRevision.containsKey(microservice.getServiceName())) {
+      revision = serviceRevision.get(microservice.getServiceName());
+    }
+    List<ServiceInstance> instanceList = serviceCombClient.getInstances(microservice, revision);
+    return getList(instanceList, microservice.getServiceName());
   }
 
   private static List<ServiceInstance> getList(List<ServiceInstance> instanceList,

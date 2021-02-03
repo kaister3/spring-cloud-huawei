@@ -37,7 +37,7 @@ public class Application {
 
   @LoadBalanced
   @Bean
-  public RestTemplate restTemplate(RestTemplateBuilder builder){
+  public RestTemplate restTemplate(RestTemplateBuilder builder) {
     return builder.build();
   }
 }

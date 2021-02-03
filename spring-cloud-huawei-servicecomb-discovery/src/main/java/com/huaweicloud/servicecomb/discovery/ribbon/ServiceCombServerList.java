@@ -19,11 +19,13 @@ package com.huaweicloud.servicecomb.discovery.ribbon;
 
 import com.huaweicloud.servicecomb.discovery.client.model.MicroserviceInstanceStatus;
 import com.netflix.loadbalancer.Server;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import org.springframework.cloud.client.ServiceInstance;
+
 import com.huaweicloud.servicecomb.discovery.client.ServiceCombClient;
 import com.huaweicloud.servicecomb.discovery.client.model.Microservice;
 import com.huaweicloud.servicecomb.discovery.discovery.MicroserviceHandler;

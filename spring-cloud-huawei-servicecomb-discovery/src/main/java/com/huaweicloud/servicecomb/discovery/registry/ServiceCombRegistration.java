@@ -23,6 +23,7 @@ import java.util.Map;
 
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.serviceregistry.Registration;
+
 import com.huaweicloud.common.util.NetUtil;
 import com.huaweicloud.servicecomb.discovery.discovery.ServiceCombDiscoveryProperties;
 

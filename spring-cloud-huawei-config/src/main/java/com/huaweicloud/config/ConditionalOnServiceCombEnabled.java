@@ -25,7 +25,9 @@ import java.lang.annotation.Target;
 import org.springframework.boot.autoconfigure.condition.AllNestedConditions;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+
 import com.huaweicloud.config.client.ServiceCombConfigClient;
+
 import org.springframework.context.annotation.Conditional;
 
 /**

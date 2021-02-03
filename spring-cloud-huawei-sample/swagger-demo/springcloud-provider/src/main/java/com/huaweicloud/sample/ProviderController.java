@@ -55,7 +55,7 @@ public class ProviderController {
   @GetMapping("/invoke")
   public String invoke() {
     return restTemplate
-        .getForObject("http://swagger-consumer/consumer/invoke",String.class);
+        .getForObject("http://swagger-consumer/consumer/invoke", String.class);
   }
 
   @GetMapping("/longCall")

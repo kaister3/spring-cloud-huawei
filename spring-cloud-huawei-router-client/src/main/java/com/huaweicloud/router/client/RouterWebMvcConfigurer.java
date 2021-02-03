@@ -19,9 +19,11 @@ package com.huaweicloud.router.client;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import com.huaweicloud.router.client.hytrix.RouterHystrixConcurrencyStrategy;
 import com.huaweicloud.router.client.rest.RouterRestTemplateInterceptor;
 import com.huaweicloud.router.client.track.RouterHandlerInterceptor;
+
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -55,7 +57,7 @@ public class RouterWebMvcConfigurer implements WebMvcConfigurer {
   public RouterHystrixConcurrencyStrategy routerHystrixConcurrencyStrategy() {
     return new RouterHystrixConcurrencyStrategy();
   }
-  
+
   @Override
   public void addInterceptors(InterceptorRegistry registry) {
     registry.addInterceptor(routerHandlerInterceptor).addPathPatterns("/**");

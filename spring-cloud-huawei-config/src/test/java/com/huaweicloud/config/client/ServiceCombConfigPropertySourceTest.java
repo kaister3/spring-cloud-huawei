@@ -19,12 +19,14 @@ package com.huaweicloud.config.client;
 
 import com.huaweicloud.config.ServiceCombConfigProperties;
 import com.huaweicloud.config.ServiceCombConfigPropertySource;
+
 import java.util.HashMap;
 import java.util.Map;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import com.huaweicloud.common.exception.RemoteOperationException;
 import com.huaweicloud.config.client.ServiceCombConfigClient;
 

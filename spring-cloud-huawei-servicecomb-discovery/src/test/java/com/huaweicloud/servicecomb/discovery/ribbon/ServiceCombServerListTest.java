@@ -20,6 +20,7 @@ package com.huaweicloud.servicecomb.discovery.ribbon;
 import com.huaweicloud.servicecomb.discovery.client.model.MicroserviceInstanceStatus;
 import com.huaweicloud.servicecomb.discovery.discovery.ServiceCombDiscoveryProperties;
 import com.netflix.loadbalancer.Server;
+
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,6 +30,7 @@ import java.util.Map;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.cloud.client.ServiceInstance;
+
 import com.huaweicloud.common.exception.ServiceCombException;
 import com.huaweicloud.servicecomb.discovery.client.ServiceCombClient;
 import com.huaweicloud.servicecomb.discovery.client.model.Microservice;

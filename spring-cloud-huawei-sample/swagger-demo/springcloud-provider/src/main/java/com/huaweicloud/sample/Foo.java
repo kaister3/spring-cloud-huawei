@@ -22,7 +22,9 @@ package com.huaweicloud.sample;
  **/
 public class Foo {
   String field1;
+
   int field2;
+
   Foo foo;
 
   public Foo() {

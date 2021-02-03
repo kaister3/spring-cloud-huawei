@@ -26,6 +26,6 @@ import org.springframework.web.bind.annotation.RequestParam;
  **/
 @FeignClient(name = "canary-provider")
 public interface FeignService {
-    @GetMapping("/provider")
-    String sayHello(@RequestParam("id") Long id);
+  @GetMapping("/provider")
+  String sayHello(@RequestParam("id") Long id);
 }

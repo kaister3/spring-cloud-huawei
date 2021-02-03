@@ -20,6 +20,7 @@ package com.huaweicloud.config.client;
 import static org.junit.Assert.assertEquals;
 
 import com.huaweicloud.config.ConfigWatch;
+
 import org.junit.Test;
 
 /**

@@ -30,10 +30,10 @@ info:
     url: "http://www.apache.org/licenses/LICENSE-2.0"
 host: ""
 basePath: "/"
-tags: []
-schemes: []
-consumes: []
-produces: []
+tags: [ ]
+schemes: [ ]
+consumes: [ ]
+produces: [ ]
 paths:
   /danglingPattern/**:
     post:
@@ -41,7 +41,7 @@ paths:
         - "schema-content-controller"
       summary: "danglingPattern"
       operationId: "danglingPatternUsingPOST"
-      schemes: []
+      schemes: [ ]
       consumes:
         - "application/json"
       produces:
@@ -56,27 +56,27 @@ paths:
       responses:
         "200":
           description: "OK"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
           schema:
             type: "string"
         "201":
           description: "Created"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "401":
           description: "Unauthorized"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "403":
           description: "Forbidden"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "404":
           description: "Not Found"
-          examples: {}
-          headers: {}
-      security: []
+          examples: { }
+          headers: { }
+      security: [ ]
       deprecated: false
   /sayHelloGet:
     get:
@@ -84,8 +84,8 @@ paths:
         - "schema-content-controller"
       summary: "sayHelloGet"
       operationId: "sayHelloGetUsingGET"
-      schemes: []
-      consumes: []
+      schemes: [ ]
+      consumes: [ ]
       produces:
         - "*/*"
       parameters:
@@ -97,30 +97,30 @@ paths:
       responses:
         "200":
           description: "OK"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
           schema:
             type: "string"
         "401":
           description: "Unauthorized"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "403":
           description: "Forbidden"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "404":
           description: "Not Found"
-          examples: {}
-          headers: {}
-      security: []
+          examples: { }
+          headers: { }
+      security: [ ]
       deprecated: false
     head:
       tags:
         - "schema-content-controller"
       summary: "sayHelloGet"
       operationId: "sayHelloGetUsingHEAD"
-      schemes: []
+      schemes: [ ]
       consumes:
         - "application/json"
       produces:
@@ -134,30 +134,30 @@ paths:
       responses:
         "200":
           description: "OK"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
           schema:
             type: "string"
         "204":
           description: "No Content"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "401":
           description: "Unauthorized"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "403":
           description: "Forbidden"
-          examples: {}
-          headers: {}
-      security: []
+          examples: { }
+          headers: { }
+      security: [ ]
       deprecated: false
     post:
       tags:
         - "schema-content-controller"
       summary: "sayHelloGet"
       operationId: "sayHelloGetUsingPOST"
-      schemes: []
+      schemes: [ ]
       consumes:
         - "application/json"
       produces:
@@ -171,34 +171,34 @@ paths:
       responses:
         "200":
           description: "OK"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
           schema:
             type: "string"
         "201":
           description: "Created"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "401":
           description: "Unauthorized"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "403":
           description: "Forbidden"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "404":
           description: "Not Found"
-          examples: {}
-          headers: {}
-      security: []
+          examples: { }
+          headers: { }
+      security: [ ]
       deprecated: false
     put:
       tags:
         - "schema-content-controller"
       summary: "sayHelloGet"
       operationId: "sayHelloGetUsingPUT"
-      schemes: []
+      schemes: [ ]
       consumes:
         - "application/json"
       produces:
@@ -212,35 +212,35 @@ paths:
       responses:
         "200":
           description: "OK"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
           schema:
             type: "string"
         "201":
           description: "Created"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "401":
           description: "Unauthorized"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "403":
           description: "Forbidden"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "404":
           description: "Not Found"
-          examples: {}
-          headers: {}
-      security: []
+          examples: { }
+          headers: { }
+      security: [ ]
       deprecated: false
     delete:
       tags:
         - "schema-content-controller"
       summary: "sayHelloGet"
       operationId: "sayHelloGetUsingDELETE"
-      schemes: []
-      consumes: []
+      schemes: [ ]
+      consumes: [ ]
       produces:
         - "*/*"
       parameters:
@@ -252,30 +252,30 @@ paths:
       responses:
         "200":
           description: "OK"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
           schema:
             type: "string"
         "204":
           description: "No Content"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "401":
           description: "Unauthorized"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "403":
           description: "Forbidden"
-          examples: {}
-          headers: {}
-      security: []
+          examples: { }
+          headers: { }
+      security: [ ]
       deprecated: false
     options:
       tags:
         - "schema-content-controller"
       summary: "sayHelloGet"
       operationId: "sayHelloGetUsingOPTIONS"
-      schemes: []
+      schemes: [ ]
       consumes:
         - "application/json"
       produces:
@@ -289,30 +289,30 @@ paths:
       responses:
         "200":
           description: "OK"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
           schema:
             type: "string"
         "204":
           description: "No Content"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "401":
           description: "Unauthorized"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "403":
           description: "Forbidden"
-          examples: {}
-          headers: {}
-      security: []
+          examples: { }
+          headers: { }
+      security: [ ]
       deprecated: false
     patch:
       tags:
         - "schema-content-controller"
       summary: "sayHelloGet"
       operationId: "sayHelloGetUsingPATCH"
-      schemes: []
+      schemes: [ ]
       consumes:
         - "application/json"
       produces:
@@ -326,23 +326,23 @@ paths:
       responses:
         "200":
           description: "OK"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
           schema:
             type: "string"
         "204":
           description: "No Content"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "401":
           description: "Unauthorized"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "403":
           description: "Forbidden"
-          examples: {}
-          headers: {}
-      security: []
+          examples: { }
+          headers: { }
+      security: [ ]
       deprecated: false
   /sayHelloPost:
     post:
@@ -350,7 +350,7 @@ paths:
         - "schema-content-controller"
       summary: "sayHelloPost"
       operationId: "sayHelloPostUsingPOST"
-      schemes: []
+      schemes: [ ]
       consumes:
         - "application/json"
       produces:
@@ -364,27 +364,27 @@ paths:
       responses:
         "200":
           description: "OK"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
           schema:
             type: "string"
         "201":
           description: "Created"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "401":
           description: "Unauthorized"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "403":
           description: "Forbidden"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "404":
           description: "Not Found"
-          examples: {}
-          headers: {}
-      security: []
+          examples: { }
+          headers: { }
+      security: [ ]
       deprecated: false
   /stringRequestBody:
     post:
@@ -392,7 +392,7 @@ paths:
         - "schema-content-controller"
       summary: "stringRequestBody"
       operationId: "stringRequestBodyUsingPOST"
-      schemes: []
+      schemes: [ ]
       consumes:
         - "application/json"
       produces:
@@ -407,27 +407,27 @@ paths:
       responses:
         "200":
           description: "OK"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
           schema:
             type: "string"
         "201":
           description: "Created"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "401":
           description: "Unauthorized"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "403":
           description: "Forbidden"
-          examples: {}
-          headers: {}
+          examples: { }
+          headers: { }
         "404":
           description: "Not Found"
-          examples: {}
-          headers: {}
-      security: []
+          examples: { }
+          headers: { }
+      security: [ ]
       deprecated: false
-securityDefinitions: {}
-definitions: {}
+securityDefinitions: { }
+definitions: { }
