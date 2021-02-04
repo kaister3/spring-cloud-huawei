@@ -56,6 +56,8 @@
     <module>spring-cloud-huawei-swagger</module>
     <module>governance</module>
     <module>spring-cloud-huawei-governance</module>
+    <module>foundations</module>
+    <module>spring-cloud-huawei-foundations</module>
   </modules>
 
   <licenses>

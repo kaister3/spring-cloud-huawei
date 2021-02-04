@@ -1,14 +1,17 @@
 package com.huaweicloud.config;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.EnvironmentAware;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.Ordered;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;
+import org.springframework.core.env.MapPropertySource;
 import org.springframework.core.env.MutablePropertySources;
 
 
@@ -16,7 +19,7 @@ import org.springframework.core.env.MutablePropertySources;
  * as of 5.2; use org.springframework.context.support.PropertySourcesPlaceholderConfigurer
  * instead which is more flexible through taking advantage of the Environment and PropertySource mechanisms.
  */
-public class ConfigurationSpringInitializer extends PropertySourcesPlaceholderConfigurer {
+public class ConfigurationSpringInitializer extends PropertySourcesPlaceholderConfigurer implements EnvironmentAware {
   private static final Logger LOGGER = LoggerFactory.getLogger(ConfigurationSpringInitializer.class);
 
   public static final String CONFIG_NAME = "config";
@@ -33,13 +36,15 @@ public class ConfigurationSpringInitializer extends PropertySourcesPlaceholderCo
 
   @Override
   public void setEnvironment(Environment environment) {
-    ///
+    syncFromSpring(environment);
+
   }
 
   private void syncFromSpring(Environment environment) {
     String environmentName = generateNameForEnvironment(environment);
     LOGGER.info("Environment received, will get configurations from [{}].", environmentName);
 
+    Map<String, Object> extraConfig = getAllPro
 
   }
 
@@ -62,6 +67,18 @@ public class ConfigurationSpringInitializer extends PropertySourcesPlaceholderCo
     return environment.getClass().getName() + "@" + environment.hashCode();
   }
 
+  private Map<String, Object> getAllProperties(Environment environment) {
+    Map<String, Object> configFromSpringBoot = new HashMap<>();
+
+    if (!(environment instanceof ConfigurableEnvironment)) {
+      return configFromSpringBoot;
+    }
+
+    ConfigurableEnvironment configurableEnvironment = (ConfigurableEnvironment) environment;
+
+    if (ignoreResolveFailure())
+  }
+
   private static void addMappingToSpring(Environment environment) {
     if (!(environment instanceof ConfigurableEnvironment)) {
       return;
@@ -73,6 +90,11 @@ public class ConfigurationSpringInitializer extends PropertySourcesPlaceholderCo
       return;
     }
 
-    Map<String, Object> mappings =
+    Map<String, Object> mappings = ConfigMapping.getConvertedMap(environment);
+    propertySources.addFirst(new MapPropertySource(MAPPING_PROPERTY_SOURCE_NAME, mappings));
+  }
+
+  private boolean ignoreResolveFailure() {
+    return Conf
   }
 }
